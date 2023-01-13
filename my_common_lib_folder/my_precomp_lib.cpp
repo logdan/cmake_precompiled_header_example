@@ -1,4 +1,4 @@
-#include "my_file.h"
+#include "my_precomp_header.h"
 
 // We don't need to include <iostream> here.
 // It is part of the precompiled header cmake_pch.h which is

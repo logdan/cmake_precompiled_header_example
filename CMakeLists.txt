@@ -19,7 +19,7 @@ add_executable(cmake_precompiled_header_example main.cpp)
 # Re-use precompiled header from my_common_lib.
 # (We could have made the precompiled header public in my_common_lib and
 # then we wouldn't have to do this, but I wanted to this functionality)
-target_precompile_headers(cmake_precompiled_header_example REUSE_FROM my_common_lib)
+# target_precompile_headers(cmake_precompiled_header_example REUSE_FROM my_common_lib)
 
 target_link_libraries(cmake_precompiled_header_example 
   PUBLIC my_common_lib
